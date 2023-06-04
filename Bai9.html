@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Gửi dữ liệu</title>
+</head>
+<body>
+    <form action="XuLy2.aspx" method="get" class="form" onsubmit="return checkThongTin()" runnat="server">
+        <div class="form-row">
+            <label class="form-label" for="txtTen">Tên VXL:</label>
+            <input class="form-input" type="text" id="txtTen" name="txtTen">
+            <div class="form-check" id="checkTen"></div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="txtHang">Hãng</label>
+            <input class="form-input" type="text" id="txtHang" name="txtHang">
+            <div class="form-check" id="checkHang"></div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="dNgaySX">Ngày ra mắt</label>
+            <input class="form-input" type="date" id="dNgaySX" name="dNgaySX">
+            <div class="form-check" id="checkNgaySX"></div>
+        </div>
+
+        <div class="form-row">
+            <label class="form-label" for="fGia">Giá</label>
+            <input class="form-input" type="text" id="fGia" name="fGia">
+            <div class="form-check" id="checkGia"></div>
+        </div>
+
+        <div class="form-btn">
+            <button type="button" class="btn" id="btnHuy" onclick="huy()">Huỷ</button>
+            <button type="submit" class="btn" id="btnThem" >Thêm</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
